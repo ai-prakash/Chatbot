@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 0;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    color: none;
+    padding: 40px 30px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.banner h1 {
+    margin: 10px; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 40px;
+    text-decoration: none;
+}
+
+nav input[type="text"] {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+main {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.highlight-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f7d794; 
+    margin-bottom: 10px;
+}
+
+.chatbot {
+    padding-right: 30px;
+    text-align: center;
+}
+
+.chatbot h2 {
+    margin-bottom: 2em; 
+}
+
+iframe {
+    border-radius: 20px;
+    border: none;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+body::before {
+    position: fixed;
+}
